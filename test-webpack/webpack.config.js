@@ -10,9 +10,7 @@ module.exports = {
   output: {
     filename: '[name].' + Date.now() + ".bundle.min.js",
     path: path.resolve(__dirname, 'dist'),
-    clean: {
-      keep: /sprites\//, // 保留 'sprites/' 下的静态资源
-    }
+    clean: true
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -1,10 +1,17 @@
 h1{
   color: red;
-  background: url(./assets/n1.png);
 }
 
-h2 {
-  color: red;
-  background: url(./assets/n2.png);
+.sprite-1{
+  background: url(./assets/sprites/n1.png) no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
 }
 
+.sprite-2{
+  background: url(./assets/sprites/n2.png) no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
