@@ -4,12 +4,8 @@ h1{
 
 .sprite-1{
   background: url(./assets/sprites/n1.png) no-repeat;
-  width: 100px;
-  height: 100px;
 }
 
 .sprite-2{
   background: url(./assets/sprites/n2.png) no-repeat;
-  width: 100px;
-  height: 100px;
 }
