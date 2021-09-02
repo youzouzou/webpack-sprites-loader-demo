@@ -14,7 +14,6 @@ module.exports = function (content, map, meta) {
   const patt = /(background.*)url\((.*)\).*;/g;
   while ((result = patt.exec(content.replace(/;/g, ";\n"))) != null) {
     if (result) {
-      // TODO:测试mac
       imageList.push({
         sentence: result[0],
         id: result[2],
@@ -33,7 +32,6 @@ module.exports = function (content, map, meta) {
           console.log("错误", err);
           callback(err);
         } else {
-          // TODO:测试mac
 
           if (!fs.existsSync(path.resolve(dist))) {
             fs.mkdirSync(path.resolve(dist)); // 创建放置雪碧图的目录
