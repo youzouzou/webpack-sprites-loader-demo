@@ -3,9 +3,9 @@ h1{
 }
 
 .sprite-1{
-  background: url(./assets/sprites/n1.png) no-repeat;
+  background: url(./assets/sprites/icon1.png) no-repeat;
 }
 
 .sprite-2{
-  background: url(./assets/sprites/n2.png) no-repeat;
+  background: url(./assets/sprites/icon2.png) no-repeat;
 }
