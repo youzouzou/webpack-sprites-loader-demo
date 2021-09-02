@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --watch",
+    "dev": "webpack serve --open",
     "build": "webpack"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "style-loader": "^3.2.1",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0",
     "yzz-sprite-loader": "^1.0.1"
   }
 }
