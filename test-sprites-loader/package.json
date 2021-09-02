@@ -12,5 +12,8 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "spritesmith": "^3.4.0"
+  },
+  "devDependencies": {
+    "loader-utils": "^2.0.0"
   }
 }

@@ -1,11 +1,14 @@
 const Spritesmith = require('spritesmith');
 const fs = require('fs');
 const path = require('path');
+const { getOptions } = require('loader-utils');
 const imageList = [];
 
 module.exports = function (content, map, meta) {
 
-  const dist = this.getOptions().dist || "./src/assets/sprites";
+  const options = getOptions(this);
+  // const dist = this.getOptions().dist || "./src/assets/sprites";
+  const dist = options.dist || "./src/assets/sprites";
 
   const callback = this.async();
 
