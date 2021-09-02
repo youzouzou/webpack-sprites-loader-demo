@@ -39,11 +39,11 @@ module.exports = function (content, map, meta) {
           const originStr = item.sentence; //"url\("+item.id.replace(/\\/g,"\\/")+"\)"
           let reg = originStr.replace(/\//g, "\\/")
           reg = reg.replace(/\./g, "\\.")
-          reg = reg.replace(/\(/g, "\\(")
-          reg = reg.replace(/\)/g, "\\)")
-          reg = reg.replace(/\:/g, "\\:")
-          reg = reg.replace(/\;/g, "\\;")
-          reg = reg.replace(/\-/g, "\\-")
+          .replace(/\(/g, "\\(")
+          .replace(/\)/g, "\\)")
+          .replace(/\:/g, "\\:")
+          .replace(/\;/g, "\\;")
+          .replace(/\-/g, "\\-")
           content = content.replace(new RegExp(reg), "background:url(" + path.resolve(dist + "/sprites.png") + ") " + (-position.x) + "px " + (-position.y) + "px no-repeat;width:" + position.width + "px!important;height:" + position.height + "px!important;");
         })
 
